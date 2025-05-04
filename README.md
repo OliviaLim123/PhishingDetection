@@ -1,4 +1,4 @@
-<img width="505" alt="Screenshot 2025-05-04 at 11 27 32 pm" src="https://github.com/user-attachments/assets/6687093a-288b-47c6-9f20-5ed50baadaf3" /># PhishingDetection
+# PhishingDetection
 31261 Internetworking Project - Developing a Machine Learning (ML) based Phishing Detection System
 Group members:
 1. Olivia Lim - 24677078
@@ -37,8 +37,10 @@ The accuracy = 0.9521
 The results can be seen from the terminal and data visualisation. The followings are the visualistion results after running this code. 
 1. Confusion Matrix Heatmap
 <img width="604" alt="Confusion Matrix Heatmap" src="https://github.com/user-attachments/assets/46a70f23-8d12-49e7-b7eb-7f5ed0e87283" />
+
 2. Feature Importance Statistic
 <img width="799" alt="Future Importance Statistic" src="https://github.com/user-attachments/assets/1fd7d965-3916-4d76-b87d-311697875e9c" />
+
 3. Pie Chart of Phishing Detection Results
 <img width="505" alt="Pie Chart of Phishing Detection Result " src="https://github.com/user-attachments/assets/66a9abc1-e53b-4ea3-a7bd-4b98d6613b8b" />
 
