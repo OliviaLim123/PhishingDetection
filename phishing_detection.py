@@ -67,6 +67,9 @@ def extract_features(df):
         is_shortened = 1 if is_shortened_url(url) else 0
         # check for suspicious keywords
         suspicious_keyword = contains_suspicious_keyword(url)
+        # checking for any digit contain binary and count 
+        digit_count = sum(char.isdigit() for char in url)
+        digit_ratio = digit_count / url_length if url_length > 0 else 0.0
 
         features.append([
             url_length,
@@ -77,11 +80,12 @@ def extract_features(df):
             hyphen_count,
             entropy,  # additional feature: URL entropy
             is_shortened,  # additional feature: shortened URL
-            suspicious_keyword
+            suspicious_keyword,
+            digit_ratio
         ])
 
     feature_names = ['url_length', 'subdomain_count', 'has_https', 'suspicious_chars',
-                     'contains_numbers', 'hyphen_count', 'entropy', 'is_shortened', 'suspicious_keyword']
+                     'contains_numbers', 'hyphen_count', 'entropy', 'is_shortened', 'suspicious_keyword','digit_ratio']
 
     return pd.DataFrame(features, columns=feature_names)
 
